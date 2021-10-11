@@ -1,4 +1,4 @@
-import Notification from "../Notification/Notification"
+import Notification from '../Notification/Notification'
 
 function Statistics ({good,neutral,bad,total,positivePercentage}) {
     return (
@@ -21,7 +21,7 @@ function Statistics ({good,neutral,bad,total,positivePercentage}) {
                     <p>Positive percentage: {positivePercentage} % </p>
                 </li>
              </ul>
-              : <Notification message="No feedback given"/>
+              : <Notification message='No feedback given'/>
              }
             
       </>
