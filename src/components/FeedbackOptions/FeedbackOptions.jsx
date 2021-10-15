@@ -10,7 +10,6 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
           type="button"
           key={option}
           name={option}
-          value={option}
           onClick={onLeaveFeedback}
         >
             {option}
@@ -23,11 +22,7 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
 }
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.shape({
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-  }).isRequired,
+  options: PropTypes.array.isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
 
